@@ -1,0 +1,63 @@
+<!--index.html
+Lebone Kolokoto
+24/03/2020-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Gxd LEE</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="landingpage.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Coda+Caption:800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/390d4443d4.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="online.js"></script>
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <nav class="navbar nav-expand-md navbar-justified" style="background-color: #183337;">
+        <a class="nav-item" href="merch.html">Merch</a>
+        <a class="nav-item" href="cart.html">Cart<p id="itemCounter"></p></a>
+    </nav>
+    <h1>Let Gxd take the wheel</h1>
+    <p>Cop music,drip,tickets to our next events and more.Book your favourite rapper,Gxd LEE,by clicking the link at the <a href="#book">bottom of the page.</a></p>
+    <!--Displays images-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 shadow-lg">
+                <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style="height:100%; width:100%" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6 shadow-lg">
+                <img src="https://images.unsplash.com/photo-1542464497-e217d476a9b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="img-fluid rounded" style="height:100%; width:100%">
+            </div>
+        </div>
+    </div>
+    <h2>Sign up or Login</h2>
+    <h5>To cop merch</h5>
+    <hr>
+    <!--Login form-->
+    <div class="form-group">
+        <form>
+            <label>Email or Username</label>
+            <input id="merch" type="text" class="form-control" placeholder="Email or Username" name="Email or Username">
+            <hr>
+            <label>Password</label>
+            <input type="text" class="form-control" placeholder="Password" name="Password">
+            <hr>
+            <button type="submit" class="btn btn-primary" onclick="alert('Welcome!')">Login</button>
+            <button type="signup" class="btn btn-dark">Sign Up</button>
+            <br>
+            <label>
+                <input type="radio" name="Subscribe" value="Subscribe">Subscribe to newsletter</label>
+            <label>
+                <input type="radio" name="Subscribe" value="Don't Subscribe">Don't subscribe</label>
+        </form>
+    </div>
+    <!--Email link-->
+    <footer id="book" style="float:right;">
+        <p><i class="fas fa-envelope" style="color:#183337;"></i> Book Gxd LEE at <a href="mailto:gxdlee@outlook.com">gxdlee@outlook.com</a></p>
+    </footer>
+</body>
+
+</html>

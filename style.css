@@ -1,0 +1,29 @@
+.container {
+    width: 80%;
+}
+
+dd,
+dt {
+    text-align: center;
+    border-style: solid;
+    height: 25px;
+    border-radius: 50%;
+    border-color: grey;
+}
+
+a {
+    color: black;
+}
+
+.modal {
+    display: none;
+    overflow: auto;
+    width: 50%;
+    margin-left:30%;
+    margin-right: 30%;
+    margin-top: 15%;
+    margin-bottom: 30%;
+}
+button {
+	float:right;
+}

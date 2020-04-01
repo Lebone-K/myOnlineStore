@@ -1,0 +1,88 @@
+/*landingpage.css
+Lebone Kolokoto
+18/02/2020*/
+
+/*changes font family and aligns headings,paragraphs & and form*/
+h1,
+h2,
+h5,
+p,
+form {
+    text-align: center;
+    font-family: 'Coda Caption', sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    color: #66cfff;
+}
+
+.music:hover {
+    opacity: 0.75;
+}
+
+/*Animates background color*/
+body {
+    background-color: #c8c8c8;
+    animation-name: bgc;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+footer {
+    color: #DC143C;
+}
+
+table {
+    border-style: ridge;
+    border-color: red;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*hides pop-up*/
+.cap,
+.outfit,
+.jacket,
+.tee,
+.pants {
+    visibility: hidden;
+    background-color: white;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    list-style: none;
+    position: absolute;
+    left: 400px;
+    top: 500px;
+}
+
+/*Shows up product info on click*/
+.outfit:target {
+    visibility: visible;
+}
+
+.cap:target {
+    visibility: visible;
+}
+
+.jacket:target {
+    visibility: visible;
+}
+
+.tee:target {
+    visibility: visible;
+}
+
+.pants:target {
+    visibility: visible;
+}
+
+/*Ads border to images*/
+img {
+    border-style: solid;
+}

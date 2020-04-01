@@ -1,0 +1,144 @@
+<!--merch.html
+Lebone Kolokoto
+18/02/2020-->
+<!DOCTYPE html>
+<html lang="en">
+<style type="text/css">
+/*Adding borders*/
+.col-md-6 {
+    overflow: hidden;
+    border-style: solid;
+}
+
+/*Zooming transition*/
+.col-md-6 img {
+    transition: transform .3s ease;
+}
+
+/*color filter*/
+img {
+    filter: grayscale(50%);
+    height: 60%;
+}
+
+/*Zoom on hover*/
+img:hover {
+    transform: scale(1.5);
+}
+
+.row {
+    border-style: solid;
+}
+</style>
+
+<head>
+    <title>Merch</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="landingpage.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+    <script type="text/javascript" src="online.js"></script>
+    <meta charset="utf-8">
+</head>
+
+<body style="background-color:#c8c8c8;" onload="disp()">
+    <!--Navigation bar-->
+    <nav class="navbar sticky-top navbar-justified nav-expand-md" style="background-color: #183337;">
+        <a class="nav-item" href="landingpage.html">Home</a>
+        <a class="nav-item" href="cart.html">Cart<p id="itemCounter"></p></a>
+    </nav>
+    <h1 style="font-style: oblique;" id="chain">Drip too hard!!!</h1>
+    <p style="text-align:center">Click on the product's image for details</p>
+    <!--Catalogoue-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="box">
+                    <a href="#popup1"><img src="images/cap.jpg" class="img-fluid img-thumbnail"></a>
+                </div>
+                <button onclick="capCart()" class="carousel-caption btn btn-primary">Quick add to cart</button>
+            </div>
+            <!--Product info on click-->
+            <div id="popup1" class="cap col-md-6">
+                <a class="close" href="#">&times;</a>
+                <h5>Palm tree cap</h5>
+                <p>One size fits all</p>
+                <p>R80</p>
+                <footer><button onclick="capCart()">Add to cart</button></footer>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="box">
+                    <a href="#popup2"><img src="images/outfit.jpg" class="img-fliud img-thumbnail"></a>
+                </div>
+                <button onclick="outfitCart()" class="carousel-caption btn btn-primary">Quick add to cart</button>
+            </div>
+            <!--Product info on click-->
+            <div id="popup2" class="outfit col-md-6">
+                <a class="close" href="#">&times;</a>
+                <h5>SuPa Outfit</h5>
+                <ul style="list-style: footnotes;">
+                    <li>Kangol bucket hat-One size fits all</li>
+                    <li>Reflective shades-One size fits all</li>
+                    <li>Orange hoodie-Available in all sizes</li>
+                </ul>
+                <p>Only available as bundle for only R400</p>
+                <footer><button onclick="outfitCart()">Add to cart</button></footer>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="box">
+                    <a href="#popup3"><img src="images/jacket.jpg" class="img-fliud img-thumbnail"></a>
+                </div>
+                <button onclick="jacketCart()" class="carousel-caption btn btn-primary">Quick add to cart</button>
+            </div>
+            <!--Product info on click-->
+            <div id="popup3" class="jacket col-md-6">
+                <a class="close" href="#">&times;</a>
+                <h5>Denim Jacket</h5>
+                <p>Available in all sizes</p>
+                <p>R500</p>
+                <footer><button onclick="jacketCart()">Add to cart</button></footer>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="box">
+                    <a href="#popup4"><img src="images/tee.jpg" class="img-fliud img-thumbnail"></a>
+                </div>
+                <button onclick="tShirtCart()" class="carousel-caption btn btn-primary">Quick add to cart</button>
+            </div>
+            <!--Product info on click-->
+            <div id="popup4" class="tee col-md-6">
+                <a class="close" href="#">&times;</a>
+                <h5>Black & White skeleton-hand t-shirt</h5>
+                <p>Available in all sizes</p>
+                <p>R150</p>
+                <footer><button onclick="tShirtCart()">Add to cart</button></footer>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="box">
+                    <a href="#popup5"><img src="images/pants.jpg" class="img-fliud img-thumbnail"></a>
+                </div>
+                <button onclick="jeanCart()" class="carousel-caption btn btn-primary">Quick add to cart</button>
+            </div>
+            <!--Product info on click-->
+            <div id="popup5" class="pants col-md-6">
+                <a class="close" href="#">&times;</a>
+                <h5>Black denim with front pockets</h5>
+                <p>Available in all sizes</p>
+                <p>R300</p>
+                <footer><button onclick="jeanCart()">Add to cart</button></footer>
+            </div>
+        </div>
+        <footer>
+            <p>All the merch will also be made available at all the shows.</p>
+            <br>
+            <p>Com'on cop your drip.</p>
+        </footer>
+</body>
+
+</html>

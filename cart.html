@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<style>
+	img {
+		width:200px;
+		height:200px;
+	}
+</style>
+<head>
+	<title>Cart</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="landingpage.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="online.js"></script>
+</head>
+<body onload="disp()">
+	<nav class="navbar sticky-top navbar-justified nav-expand-md" style="background-color: #183337;">
+        <a class="nav-item" href="landingpage.html">Home</a>
+        <a class="nav-item" href="merch.html">Merch</a>
+    </nav>
+	<div class="container" id="chain">
+		<h4 id="VATincl"></h4>
+		<h6 id="onlyVAT"></h5>
+		<ul id="info"></ul>
+		<div id="images" class="row"></div>
+	</div>
+	<hr>
+	<div class="container">
+	 <p>Should you need to remove an item from your cart,select item from the drop-down and click remove</p> 
+	<select id="added"></select>
+	<button onclick="remove()" class="btn btn-primary">Remove item</button>
+	<hr>
+	<form id="discount">
+		<h3>Fill in this form and get a discount</h3>
+		<label for="name">Your Name:</label>
+		<input type="text" name="name" required id="name">
+		<label for="email">Your email address:</label>
+		<input type="text" name="email" required id="email">
+		<label for="rating">Your rating out of 10:</label>
+		<input type="text" name="rating" required id="rating">
+		<button id="discount" onclick="myDiscount()" class="btn btn-primary">Submit</button>
+		<hr>
+	</form>
+</div>
+<h3>Would you like your items delivered or be collected by yourself?</h3><h6>NB: Standard Delivery will cost R30 & premium delivery will cost R100</h6>
+<form>
+	<select onchange="changeTot()" id="htmlSelect">
+		<option>--Select--</option>
+	</select>
+</form>
+<button onclick="confirmOrder()" id="animate" class="btn btn-primary">Confirm Order</button>
+</body>
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Smell Good</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+    <script type="text/javascript" src="online.js"></script>
+</head>
+
+<body>
+	<h2 style="text-align:center;" class="bg-light">Perfumes</h2>
+	<nav class="navbar nav-expand-sm navbar-justified">
+        <a class="nav-item" href="">Home</a>
+        <a class="nav-item" href="">Cart</a>
+        <a class="nav-item" href="">About Us</a>
+    </nav>
+
+    <div class="container">
+        <div class="col-sm-12">
+        	<p id="center">
+            <dl class="accordion">
+                <dt class="dt1 bg-secondary">MALE FRAGRANCES</dt>
+			<dd class="dd1 bg-light"><p onclick="aramisM()" id="aramisM">Aramis</></dd>
+			<dd class="dd1 bg-light"><p onclick="armani()">Armani</p></dd>
+			<dd class="dd1 bg-light"><p onclick="azzaro()">Azzaro</p></dd>
+			<dd class="dd1 bg-light"><p onclick="CK()">Calvin Klein</p></dd>
+			<dd class="dd1 bg-light"><p onclick="CH()">Carolina Herrera</p></dd>
+			<dd class="dd1 bg-light"><p onclick="chanel()">Chanel</p></dd>
+			<dd class="dd1 bg-light"><p onclick="CD()">Christian Dior</p></dd>
+			<dd class="dd1 bg-light"><p onclick="diesel()">Diesel</p></dd>
+			<dd class="dd1 bg-light"><p onclick="dunhill()">Dunhill</p></dd>
+			<dd class="dd1 bg-light"><p onclick="hugo()">Hugo Boss</p></dd>
+			<dd class="dd1 bg-light"><p onclick="PR()">Paco Rabane</p></dd>
+			<dd class="dd1 bg-light"><p onclick="TL()">Ted Lapidus</p></dd>
+			<dd class="dd1 bg-light"><p onclick="tomFord()">Tom Ford</p></dd>
+			<dd class="dd1 bg-light"><p onclick="tzar()">Van Cleef & Appels</p></dd>
+			<dd class="dd1 bg-light"><p onclick="versace()">Versace</p></dd>
+			<dd class="dd1 bg-light"><p onclick="ysl()">YSL</p></dd>
+                <dt class="dt2 bg-secondary">FEMALE FRAGRANCES</dt>
+			<dd class="dd2 bg-light"><p onclick="armaniF()">Armani</p></dd>
+			<dd class="dd2 bg-light"><p onclick="azzaroF()">Azzaro</p></dd>
+			<dd class="dd2 bg-light"><p onclick="bs()">Britney Spears</p></dd>
+			<dd class="dd2 bg-light"><p onclick="bvlgari()">Bvlgari</p></dd>
+			<dd class="dd2 bg-light"><p onclick="CHF()">Carolina Herrera</p></dd>
+			<dd class="dd2 bg-light"><p onclick="CDF()">Christian Dior</p></dd>
+			<dd class="dd2 bg-light"><p onclick="clinique()">Clinique</p></dd>
+			<dd class="dd2 bg-light"><p onclick="dkny()">DKNY</p></dd>
+			<dd class="dd2 bg-light"><p onclick="DG()">Dolce & Gabana</p></dd>
+			<dd class="dd2 bg-light"><p onclick="escada()">Escada</p></dd>
+			<dd class="dd2 bg-light"><p onclick="EL()">Estee Lauder</p></dd>
+			<dd class="dd2 bg-light"><p onclick="givenchy()">Givenchy</></dd>
+			<dd class="dd2 bg-light"><p onclick="gucci()">Gucci</p></dd>
+			<dd class="dd2 bg-light"><p onclick="JPG()">Jean Paul Gaultier</p></dd>
+			<dd class="dd2 bg-light"><p onclick="joop()">Joop</p></dd>
+			<dd class="dd2 bg-light"><p onclick="lancome()">Lancome</p></dd>
+			<dd class="dd2 bg-light"><p onclick="PRF()">Paco Rabane</p></dd>
+			<dd class="dd2 bg-light"><p onclick="TF()">Tom Ford</p></dd>
+			<dd class="dd2 bg-light"><p onclick="YSLF()">YSL</p></dd>
+            </dl>
+        </p>
+        </div>
+    </div>
+<div id="aramisModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMe()">&times;</span>
+    	<p>Aramis(50ml),R150<button>Add to Cart</button></p>
+  </div>
+
+  <div id="armaniModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMe()">&times;</span>
+    <h3>Armani</h3>
+    <ul>
+    	<li>Aqua Di Gio(50ml),R150<button>Add to Cart</button></li>
+    	<li>Black Code(50ml),R150<button>Add to Cart</button></li>
+    </ul>
+      </div>
+
+  <div id="AzzaroModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMe()">&times;</span>
+    <h3>Azzaro</h3>
+    <ul>
+    	<li>Wanted(50ml),R150<button>Add to Cart</button></li>
+    </ul>
+  </div>
+</div>
+
+<div id="CalvinKleinModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMe()">&times;</span>
+    <h3>Calvin Klein</h3>
+    <ul>
+    	<li>CK One Shock(50ml),R150<button>Add to Cart</button></li>
+    </ul>
+  </div>
+
+  <div id="CarolinaHerreraModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMe()">&times;</span>
+    <h3>Carolina Herrera</h3>
+    <ul>
+    	<li>212 VIP(50ml),R150<button>Add to Cart</button></li>
+    </ul>
+  </div>
+
+  <div id="ChanelModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMe()">&times;</span>
+    <h3>Chanel</h3>
+    <ul>
+    	<li>Allure(50ml),R150<button>Add to Cart</button></li>
+    </ul>
+  </div>
+
+  <div id="ChristianDiorModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMe()">&times;</span>
+    <h3>Christian Dior</h3>
+    <ul>
+    	<li>Sauvage(50ml),R150<button>Add to Cart</button></li>
+    </ul>
+  </div>
+
+  <div id="DieselModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMe()">&times;</span>
+    <h3>Diesel</h3>
+    <ul>
+    	<li>Only the Brave(50ml),R150<button>Add to Cart</button></li>
+    </ul>
+  </div>
+
+  <div id="DunhillModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMe()">&times;</span>
+    <h3>Dunhill</h3>
+    <ul>
+    	<li>Desire(50ml),R150<button>Add to Cart</button></li>
+    	<li>Icon(50ml),R150<button>Add to Cart</button></li>
+    </ul>
+      </div>
+
+<div id="HugoBossModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMe()">&times;</span>
+    <h3>Hugo Boss</h3>
+    <ul>
+    	<li>Boss Bottled(50ml),R150<button>Add to Cart</button></li>
+    </ul>
+  </div>
+
+  <div id="PacoRabaneModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMe()">&times;</span>
+    <h3>Paco Rabane</h3>
+    <ul>
+    	<li>1 Million(50ml),R150<button>Add to Cart</button></li>
+    	<li>Invictus(50ml),R150<button>Add to Cart</button></li>
+    </ul>
+      </div>
+
+      <div id="TedLapidusModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMe()">&times;</span>
+    <h3>Ted Lapidus</h3>
+    <ul>
+    	<li>Ted Lapidus(50ml),R150<button>Add to Cart</button></li>
+    </ul>
+      </div>
+
+      <div id="TomFordModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMe()">&times;</span>
+    <h3>Tom Ford</h3>
+    <ul>
+    	<li>Noir(50ml),R150<button>Add to Cart</button></li>
+    	<li>Oud Wood(50ml),R150<button>Add to Cart</button></li>
+    </ul>
+      </div>
+
+      <div id="TzarModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMe()">&times;</span>
+    <h3>Van Cleef & Appels</h3>
+    <ul>
+    	<li>Tzar(50ml),R150<button>Add to Cart</button></li>
+    </ul>
+      </div>
+
+      <div id="VersaceModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMe()">&times;</span>
+    <h3>Versace</h3>
+    <ul>
+    	<li>Eros(50ml),R150<button>Add to Cart</button></li>
+    </ul>
+      </div>
+
+      <div id="YSLModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMe()">&times;</span>
+    <h3>YSL</h3>
+    <ul>
+    	<li>M7(50ml),R150<button>Add to Cart</button></li>
+    </ul>
+      </div>
+
+      <div id="ArmaniFModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMe()">&times;</span>
+    <h3>Armani</h3>
+    <ul>
+    	<li>Si(50ml),R150<button>Add to Cart</button></li>
+    </ul>
+      </div>
+
+      <div id="AzzaroFModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMe()">&times;</span>
+    <h3>Azzaro</h3>
+    <ul>
+    	<li>Wanted Girl(50ml),R150<button>Add to Cart</button></li>
+    </ul>
+      </div>
+
+      <div id="BritneySpearsModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMe()">&times;</span>
+    <h3>Britney Spears</h3>
+    <ul>
+    	<li>Fantasy(50ml),R150<button>Add to Cart</button></li>
+    </ul>
+      </div>
+
+      <div id="BvlgariModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMe()">&times;</span>
+    <h3>Bvlgari</h3>
+    <ul>
+    	<li>Goldea(50ml),R150<button>Add to Cart</button></li>
+    </ul>
+      </div>
+
+      <div id="CarolinaHerreraFModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMe()">&times;</span>
+    <h3>Carolina Herrera</h3>
+    <ul>
+    	<li>212 Vip Rose(50ml),R150<button>Add to Cart</button></li>
+    	<li>Good Girl(50ml),R150<button>Add to Cart</button></li>
+    </ul>
+      </div>
+
+      <div id="ChristianDiorFModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMe()">&times;</span>
+    <h3>Christian Dior</h3>
+    <ul>
+    	<li>Hypnotic Poison(50ml),R150<button>Add to Cart</button></li>
+    </ul>
+      </div>
+
+      <div id="CliniqueModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMe()">&times;</span>
+    <h3>Clinique</h3>
+    <ul>
+    	<li>Aromatics(50ml),R150<button>Add to Cart</button></li>
+    </ul>
+      </div>
+
+      <div id="DKNYModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMe()">&times;</span>
+    <h3>DKNY</h3>
+    <ul>
+    	<li>Be Delicious(50ml),R150<button>Add to Cart</button></li>
+    	<li>Nectar Love(50ml),R150<button>Add to Cart</button></li>
+    </ul>
+      </div>
+
+      <div id="Dolce&GabanaModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMe()">&times;</span>
+    <h3>Dolce & Gabana</h3>
+    <ul>
+    	<li>Light Blue(50ml),R150<button>Add to Cart</button></li>
+    </ul>
+      </div>
+
+      <div id="EscadaModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMe()">&times;</span>
+    <h3>Escada</h3>
+    <ul>
+    	<li>Cherry in the Air(50ml),R150<button>Add to Cart</button></li>
+    </ul>
+      </div>
+
+      <div id="EsteeLauderModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMe()">&times;</span>
+    <h3>Estee Lauder</h3>
+    <ul>
+    	<li>Pleasures(50ml),R150<button>Add to Cart</button></li>
+    </ul>
+      </div>
+
+      <div id="GivenchyModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMe()">&times;</span>
+    <h3>Givenchy</h3>
+    <ul>
+    	<li>Absolutely Irresistable(50ml),R150<button>Add to Cart</button></li>
+    </ul>
+      </div>
+
+      <div id="GucciModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMe()">&times;</span>
+    <h3>Gucci</h3>
+    <ul>
+    	<li>Bamboo(50ml),R150<button>Add to Cart</button></li>
+    	<li>Premiere(50ml),R150<button>Add to Cart</button></li>
+    </ul>
+      </div>
+
+      <div id="JeanPaulGaultierModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMe()">&times;</span>
+    <h3>Jean Paul Gaultier</h3>
+    <ul>
+    	<li>Scandal(50ml),R150<button>Add to Cart</button></li>
+    </ul>
+      </div>
+
+      <div id="JoopModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMe()">&times;</span>
+    <h3>Joop</h3>
+    <ul>
+    	<li>Joop Femme(50ml),R150<button>Add to Cart</button></li>
+    </ul>
+      </div>
+
+      <div id="LancomeModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMe()">&times;</span>
+    <h3>Lancome</h3>
+    <ul>
+    	<li>La Vie Est Belle(50ml),R150<button>Add to Cart</button></li>
+    	<li>La Nuit Tresor(50ml),R150<button>Add to Cart</button></li>
+    </ul>
+      </div>
+
+      <div id="PacoRabaneFModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMe()">&times;</span>
+    <h3>Paco Rabane</h3>
+    <ul>
+    	<li>Lady Million(50ml),R150<button>Add to Cart</button></li>
+    	<li>Olympea(50ml),R150<button>Add to Cart</button></li>
+    </ul>
+      </div>
+
+      <div id="TomFordModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMe()">&times;</span>
+    <h3>Tom Ford</h3>
+    <ul>
+    	<li>Black Orchid(50ml),R150<button>Add to Cart</button></li>
+    	<li>Orchid Soleil(50ml),R150<button>Add to Cart</button></li>
+    </ul>
+      </div>
+
+      <div id="YSLFModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMe()">&times;</span>
+    <h3>YSL</h3>
+    <ul>
+    	<li>Black Opium(50ml),R150<button>Add to Cart</button></li>
+    </ul>
+      </div>
+
+</body>
+
+</html>
